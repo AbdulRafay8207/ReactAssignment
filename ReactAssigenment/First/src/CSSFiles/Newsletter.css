@@ -1,0 +1,134 @@
+.newsletter-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.newsletter-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-content {
+  margin: 0 auto;
+}
+
+.newsletter-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.newsletter-description {
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.email-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #9ca3af;
+}
+
+.subscribe-button {
+  margin-left: 40px;  
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #2563eb;
+}
+
+.newsletter-footer {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: left;
+}
+
+.newsletter-footer a {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .form-group {
+    flex-direction: row;
+  }
+
+  .subscribe-button {
+    border-radius: 0 6px 6px 0;
+  }
+
+  .input-wrapper input {
+    border-radius: 6px 0 0 6px;
+  }
+}

@@ -1,0 +1,1 @@
+function FAQCard(question,answer):{}

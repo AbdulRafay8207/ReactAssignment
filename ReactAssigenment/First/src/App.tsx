@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar"
 import HeroSection from "./components/HeroSection"
-import FeatureSection from "./components/FeatureSection"
-import FAQSection from "./components/FAQSection"
+import FeatureSection from "./components/Feature/FeatureSection"
+import FAQSection from "./components/FAQ/FAQSection"
 import NewsletterSection from "./components/NewsletterSection"
-import FooterSection from "./components/FooterSection"
+import FooterSection from "./components/Footer/FooterSection"
+import Blog from "./components/Blog"
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
     <FeatureSection />
     <FAQSection />
     <NewsletterSection />
+    <Blog />
     <FooterSection />
     </>
   )
